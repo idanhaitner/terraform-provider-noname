@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/vault/sdk/helper/jsonutil"
 	cleanhttp "github.com/hashicorp/go-cleanhttp"
+	"github.com/idanhaitner/terraform-provider-noname/internal/vault/sdk/helper/jsonutil"
 	"github.com/keybase/go-crypto/openpgp"
 )
 

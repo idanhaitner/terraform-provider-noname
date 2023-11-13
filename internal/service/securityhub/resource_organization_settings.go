@@ -5,10 +5,10 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/securityhub"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/flex"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	"github.com/idanhaitner/terraform-provider-noname/internal/flex"
 )
 
 func ResourceSecurityHubOrganizationSettings() *schema.Resource {

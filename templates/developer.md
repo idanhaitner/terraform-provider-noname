@@ -23,7 +23,7 @@ For testing this provider, you can edit your `~/.terraformrc` file with the foll
 ```hcl
 provider_installation {
   dev_overrides  {
-    "cloudposse/awsutils" = "/path/to/your/code/github.com/cloudposse/terraform-provider-awsutils/"
+    "cloudposse/awsutils" = "/path/to/your/code/github.com/idanhaitner/terraform-provider-noname/"
   }
 
   # For all other providers, install them directly from their origin provider
@@ -55,7 +55,7 @@ Initializing provider plugins...
 Warning: Provider development overrides are in effect
 
 The following provider development overrides are set in the CLI configuration:
- - cloudposse/awsutils in /path/to/your/code/github.com/cloudposse/terraform-provider-awsutils
+ - cloudposse/awsutils in /path/to/your/code/github.com/idanhaitner/terraform-provider-noname
 
 The behavior may therefore not match any released version of the provider and
 applying changes may cause the state to become incompatible with published
@@ -68,7 +68,7 @@ terraform apply
 Warning: Provider development overrides are in effect
 
 The following provider development overrides are set in the CLI configuration:
- - cloudposse/awsutils in /Users/matt/code/src/github.com/cloudposse/terraform-provider-awsutils
+ - cloudposse/awsutils in /Users/matt/code/src/github.com/idanhaitner/terraform-provider-noname
 
 The behavior may therefore not match any released version of the provider and
 applying changes may cause the state to become incompatible with published

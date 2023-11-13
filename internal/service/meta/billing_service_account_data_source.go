@@ -2,8 +2,8 @@ package meta
 
 import (
 	"github.com/aws/aws-sdk-go/aws/arn"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
 )
 
 // See http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-getting-started.html#step-2

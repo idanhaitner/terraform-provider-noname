@@ -20,12 +20,6 @@ import (
 	"github.com/aws/aws-sdk-go/service/iam"
 	"github.com/aws/aws-sdk-go/service/outposts"
 	"github.com/aws/aws-sdk-go/service/ssoadmin"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/provider"
-	tfec2 "github.com/cloudposse/terraform-provider-awsutils/internal/service/ec2"
-	tforganizations "github.com/cloudposse/terraform-provider-awsutils/internal/service/organizations"
-	tfsts "github.com/cloudposse/terraform-provider-awsutils/internal/service/sts"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
@@ -34,6 +28,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/structure"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	"github.com/idanhaitner/terraform-provider-noname/internal/provider"
+	tfec2 "github.com/idanhaitner/terraform-provider-noname/internal/service/ec2"
+	tforganizations "github.com/idanhaitner/terraform-provider-noname/internal/service/organizations"
+	tfsts "github.com/idanhaitner/terraform-provider-noname/internal/service/sts"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
 )
 
 const (
@@ -1618,9 +1618,10 @@ data "aws_availability_zones" "available" {
 // AvailableEC2InstanceTypeForAvailabilityZone returns the configuration for a data source that describes
 // the first available EC2 instance type offering in the specified availability zone from a list of preferred instance types.
 // The first argument is either an Availability Zone name or Terraform configuration reference to one, e.g.
-//   * data.aws_availability_zones.available.names[0]
-//   * aws_subnet.test.availability_zone
-//   * us-west-2a
+//   - data.aws_availability_zones.available.names[0]
+//   - aws_subnet.test.availability_zone
+//   - us-west-2a
+//
 // The data source is named 'available'.
 func AvailableEC2InstanceTypeForAvailabilityZone(availabilityZoneName string, preferredInstanceTypes ...string) string {
 	if !strings.Contains(availabilityZoneName, ".") {

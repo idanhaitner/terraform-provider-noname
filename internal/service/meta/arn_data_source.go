@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	"github.com/aws/aws-sdk-go/aws/arn"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/verify"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/verify"
 )
 
 func DataSourceARN() *schema.Resource {

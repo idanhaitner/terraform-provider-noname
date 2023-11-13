@@ -294,7 +294,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/workspaces"
 	"github.com/aws/aws-sdk-go/service/workspacesweb"
 	"github.com/aws/aws-sdk-go/service/xray"
-	"github.com/cloudposse/terraform-provider-awsutils/names"
+	"github.com/idanhaitner/terraform-provider-noname/names"
 )
 
 func (c *Config) clientConns(sess *session.Session) *AWSClient {

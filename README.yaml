@@ -26,7 +26,7 @@ github_repo: cloudposse/terraform-provider-awsutils
 badges:
   - name: "Latest Release"
     image: "https://img.shields.io/github/release/cloudposse/terraform-provider-awsutils.svg"
-    url: "https://github.com/cloudposse/terraform-provider-awsutils/releases/latest"
+    url: "https://github.com/idanhaitner/terraform-provider-noname/releases/latest"
   - name: "Slack Community"
     image: "https://slack.cloudposse.com/badge.svg"
     url: "https://slack.cloudposse.com"
@@ -39,7 +39,7 @@ related:
     description: |-
       Terraform provider for various utilities (deep merging, stack configuration management), and to add additional
       missing functionality to Terraform
-    url: "https://github.com/cloudposse/terraform-provider-awsutils"
+    url: "https://github.com/idanhaitner/terraform-provider-noname"
 
 # List any resources helpful for someone to get started. For example, link to the hashicorp documentation or AWS documentation.
 references:

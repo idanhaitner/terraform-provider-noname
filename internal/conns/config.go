@@ -39,12 +39,12 @@ import (
 	"github.com/aws/aws-sdk-go/service/storagegateway"
 	"github.com/aws/aws-sdk-go/service/sts"
 	"github.com/aws/aws-sdk-go/service/wafv2"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
-	"github.com/cloudposse/terraform-provider-awsutils/names"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	awsbasev1 "github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
+	"github.com/idanhaitner/terraform-provider-noname/names"
 )
 
 type Config struct {

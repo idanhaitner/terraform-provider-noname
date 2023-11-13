@@ -6,9 +6,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	tfec2 "github.com/cloudposse/terraform-provider-awsutils/internal/service/ec2"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	tfec2 "github.com/idanhaitner/terraform-provider-noname/internal/service/ec2"
 )
 
 func DataSourceRegions() *schema.Resource {

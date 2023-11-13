@@ -5,9 +5,9 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/organizations"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
 )
 
 func DataSourceResourceTags() *schema.Resource {

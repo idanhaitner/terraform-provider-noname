@@ -9,21 +9,16 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/feature/ec2/imds"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/experimental/nullable"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/ec2"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/guardduty"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/iam"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/macie2"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/securityhub"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/sts"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/verify"
-	"github.com/cloudposse/terraform-provider-awsutils/names"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	"github.com/idanhaitner/terraform-provider-noname/internal/experimental/nullable"
+	"github.com/idanhaitner/terraform-provider-noname/internal/service/apigateway"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
+	"github.com/idanhaitner/terraform-provider-noname/internal/verify"
+	"github.com/idanhaitner/terraform-provider-noname/names"
 )
 
 // New returns a new, initialized Terraform Plugin SDK v2-style provider instance.
@@ -246,17 +241,11 @@ func New(_ context.Context) (*schema.Provider, error) {
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
-			"awsutils_ec2_client_vpn_export_client_config": ec2.DataSourceEC2ExportClientVpnClientConfiguration(),
-			"awsutils_caller_identity":                     sts.DataSourceCallerIdentity(),
+			"noname_api_gateway": apigateway.DataSourceApiGateway(),
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"awsutils_default_vpc_deletion":               ec2.ResourceDefaultVpcDeletion(),
-			"awsutils_expiring_iam_access_key":            iam.ResourceExpiringAccessKey(),
-			"awsutils_guardduty_organization_settings":    guardduty.ResourceAwsUtilsGuardDutyOrganizationSettings(),
-			"awsutils_macie2_organization_settings":       macie2.ResourceAwsUtilsMacie2OrganizationSettings(),
-			"awsutils_security_hub_control_disablement":   securityhub.ResourceSecurityHubControlDisablement(),
-			"awsutils_security_hub_organization_settings": securityhub.ResourceSecurityHubOrganizationSettings(),
+			"noname_api_gateway": apigateway.ResourceApiGateway(),
 		},
 	}
 

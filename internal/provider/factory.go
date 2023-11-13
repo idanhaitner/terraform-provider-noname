@@ -3,10 +3,10 @@ package provider
 import (
 	"context"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/provider/fwprovider"
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5"
 	"github.com/hashicorp/terraform-plugin-mux/tf5muxserver"
+	"github.com/idanhaitner/terraform-provider-noname/internal/provider/fwprovider"
 )
 
 // ProtoV5ProviderServerFactory returns a muxed terraform-plugin-go protocol v5 provider factory function.

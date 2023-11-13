@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
 )
 
 func TestNotFound(t *testing.T) {

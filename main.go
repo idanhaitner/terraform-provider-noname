@@ -5,8 +5,8 @@ import (
 	"flag"
 	"log"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/provider"
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server"
+	"github.com/idanhaitner/terraform-provider-noname/internal/provider"
 )
 
 func main() {
@@ -30,7 +30,7 @@ func main() {
 	log.SetFlags(logFlags)
 
 	err = tf5server.Serve(
-		"registry.terraform.io/cloudposse/awsutils",
+		"hashicorp.com/edu/hashicups",
 		serverFactory,
 		serveOpts...,
 	)

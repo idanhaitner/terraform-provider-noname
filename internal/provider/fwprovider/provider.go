@@ -3,12 +3,12 @@ package fwprovider
 import (
 	"context"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/service/meta"
-	"github.com/cloudposse/terraform-provider-awsutils/names"
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/provider"
 	"github.com/hashicorp/terraform-plugin-framework/tfsdk"
 	"github.com/hashicorp/terraform-plugin-framework/types"
+	"github.com/idanhaitner/terraform-provider-noname/internal/service/meta"
+	"github.com/idanhaitner/terraform-provider-noname/names"
 )
 
 // New returns a new, initialized Terraform Plugin Framework-style provider instance.

@@ -7,9 +7,9 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/cloudposse/terraform-provider-awsutils/version"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
 	awsbasev1 "github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2"
+	"github.com/idanhaitner/terraform-provider-noname/version"
 )
 
 func NewSessionForRegion(cfg *aws.Config, region, terraformVersion string) (*session.Session, error) {

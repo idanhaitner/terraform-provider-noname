@@ -7,13 +7,13 @@ import (
 	"testing"
 
 	"github.com/aws/aws-sdk-go/service/organizations"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/acctest"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	tforganizations "github.com/cloudposse/terraform-provider-awsutils/internal/service/organizations"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	sdkacctest "github.com/hashicorp/terraform-plugin-sdk/v2/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
+	"github.com/idanhaitner/terraform-provider-noname/internal/acctest"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	tforganizations "github.com/idanhaitner/terraform-provider-noname/internal/service/organizations"
 )
 
 func testAccPolicy_basic(t *testing.T) {

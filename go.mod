@@ -1,4 +1,4 @@
-module github.com/cloudposse/terraform-provider-awsutils
+module github.com/idanhaitner/terraform-provider-noname
 
 go 1.20
 

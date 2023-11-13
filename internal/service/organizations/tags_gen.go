@@ -8,7 +8,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/organizations"
 	"github.com/aws/aws-sdk-go/service/organizations/organizationsiface"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
 )
 
 // ListTags lists organizations service tags.

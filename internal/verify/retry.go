@@ -3,9 +3,9 @@ package verify
 import (
 	"time"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
 	"github.com/hashicorp/aws-sdk-go-base/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
 )
 
 func RetryOnAWSCode(code string, f func() (interface{}, error)) (interface{}, error) {

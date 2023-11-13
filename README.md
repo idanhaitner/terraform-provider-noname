@@ -1,6 +1,6 @@
 
 <!-- markdownlint-disable -->
-# terraform-provider-awsutils [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-provider-awsutils.svg)](https://github.com/cloudposse/terraform-provider-awsutils/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com) [![Discourse Forum](https://img.shields.io/discourse/https/ask.sweetops.com/posts.svg)](https://ask.sweetops.com/)
+# terraform-provider-awsutils [![Latest Release](https://img.shields.io/github/release/cloudposse/terraform-provider-awsutils.svg)](https://github.com/idanhaitner/terraform-provider-noname/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com) [![Discourse Forum](https://img.shields.io/discourse/https/ask.sweetops.com/posts.svg)](https://ask.sweetops.com/)
 <!-- markdownlint-restore -->
 
 [![README Header][readme_header_img]][readme_header_link]
@@ -136,7 +136,7 @@ For testing this provider, you can edit your `~/.terraformrc` file with the foll
 ```hcl
 provider_installation {
   dev_overrides  {
-    "cloudposse/awsutils" = "/path/to/your/code/github.com/cloudposse/terraform-provider-awsutils/"
+    "cloudposse/awsutils" = "/path/to/your/code/github.com/idanhaitner/terraform-provider-noname/"
   }
 
   # For all other providers, install them directly from their origin provider
@@ -168,7 +168,7 @@ Initializing provider plugins...
 Warning: Provider development overrides are in effect
 
 The following provider development overrides are set in the CLI configuration:
- - cloudposse/awsutils in /path/to/your/code/github.com/cloudposse/terraform-provider-awsutils
+ - cloudposse/awsutils in /path/to/your/code/github.com/idanhaitner/terraform-provider-noname
 
 The behavior may therefore not match any released version of the provider and
 applying changes may cause the state to become incompatible with published
@@ -181,7 +181,7 @@ terraform apply
 Warning: Provider development overrides are in effect
 
 The following provider development overrides are set in the CLI configuration:
- - cloudposse/awsutils in /Users/matt/code/src/github.com/cloudposse/terraform-provider-awsutils
+ - cloudposse/awsutils in /Users/matt/code/src/github.com/idanhaitner/terraform-provider-noname
 
 The behavior may therefore not match any released version of the provider and
 applying changes may cause the state to become incompatible with published
@@ -200,7 +200,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/cloudposse/terraform-provider-awsutils)! (it helps us **a lot**)
+Like this project? Please give it a ★ on [our GitHub](https://github.com/idanhaitner/terraform-provider-noname)! (it helps us **a lot**)
 
 Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
 
@@ -210,7 +210,7 @@ Are you using this project or any of our other projects? Consider [leaving a tes
 
 Check out these related projects.
 
-- [Cloud Posse Terraform Utils Provider](https://github.com/cloudposse/terraform-provider-awsutils) - Terraform provider for various utilities (deep merging, stack configuration management), and to add additional
+- [Cloud Posse Terraform Utils Provider](https://github.com/idanhaitner/terraform-provider-noname) - Terraform provider for various utilities (deep merging, stack configuration management), and to add additional
 missing functionality to Terraform
 
 
@@ -225,7 +225,7 @@ For additional context, refer to some of these links.
 
 **Got a question?** We got answers.
 
-File a GitHub [issue](https://github.com/cloudposse/terraform-provider-awsutils/issues), send us an [email][email] or join our [Slack Community][slack].
+File a GitHub [issue](https://github.com/idanhaitner/terraform-provider-noname/issues), send us an [email][email] or join our [Slack Community][slack].
 
 [![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
 
@@ -273,7 +273,7 @@ Sign up for [our newsletter][newsletter] that covers everything on our technolog
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/cloudposse/terraform-provider-awsutils/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/idanhaitner/terraform-provider-noname/issues) to report any bugs or file feature requests.
 
 ### Developing
 
@@ -363,11 +363,11 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
   [readme_footer_link]: https://cloudposse.com/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/terraform-provider-awsutils&utm_content=readme_footer_link
   [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img
   [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/terraform-provider-awsutils&utm_content=readme_commercial_support_link
-  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-provider-awsutils&url=https://github.com/cloudposse/terraform-provider-awsutils
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-provider-awsutils&url=https://github.com/cloudposse/terraform-provider-awsutils
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/cloudposse/terraform-provider-awsutils
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/cloudposse/terraform-provider-awsutils
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/cloudposse/terraform-provider-awsutils
-  [share_email]: mailto:?subject=terraform-provider-awsutils&body=https://github.com/cloudposse/terraform-provider-awsutils
+  [share_twitter]: https://twitter.com/intent/tweet/?text=terraform-provider-awsutils&url=https://github.com/idanhaitner/terraform-provider-noname
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=terraform-provider-awsutils&url=https://github.com/idanhaitner/terraform-provider-noname
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/idanhaitner/terraform-provider-noname
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/idanhaitner/terraform-provider-noname
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/idanhaitner/terraform-provider-noname
+  [share_email]: mailto:?subject=terraform-provider-awsutils&body=https://github.com/idanhaitner/terraform-provider-noname
   [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/cloudposse/terraform-provider-awsutils?pixel&cs=github&cm=readme&an=terraform-provider-awsutils
 <!-- markdownlint-restore -->

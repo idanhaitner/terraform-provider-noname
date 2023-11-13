@@ -7,10 +7,10 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/macie2"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/flex"
 	"github.com/google/uuid"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	"github.com/idanhaitner/terraform-provider-noname/internal/flex"
 )
 
 func ResourceAwsUtilsMacie2OrganizationSettings() *schema.Resource {

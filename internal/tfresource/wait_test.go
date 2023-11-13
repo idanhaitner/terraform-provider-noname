@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
 )
 
 func TestWaitUntil(t *testing.T) {

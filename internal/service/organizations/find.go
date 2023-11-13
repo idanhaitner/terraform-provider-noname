@@ -3,9 +3,9 @@ package organizations
 import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/organizations"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
 )
 
 func FindAccountByID(conn *organizations.Organizations, id string) (*organizations.Account, error) {

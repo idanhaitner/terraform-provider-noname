@@ -1,7 +1,7 @@
 terraform {
   required_providers {
-    awsutils = {
-      source = "cloudposse/awsutils"
+    noname = {
+      source = "hashicorp.com/edu/noname"
       # For local development,
       # install the provider on local computer by running `make install` from the root of the repo,
       # and uncomment the version below
@@ -11,24 +11,11 @@ terraform {
 }
 
 # Configure the AWS Provider
-provider "awsutils" {
+provider "noname" {
 }
 
-data "awsutils_caller_identity" "default" {
-}
-
-output "account_id" {
-  value = data.awsutils_caller_identity.default.account_id
-}
-
-output "caller_arn" {
-  value = data.awsutils_caller_identity.default.arn
-}
-
-output "caller_user" {
-  value = data.awsutils_caller_identity.default.user_id
-}
-
-output "eks_role_arn" {
-  value = data.awsutils_caller_identity.default.eks_role_arn
+resource "noname_api_gateway" "default" {
+  rest_api_id = "yx8upwzuqf"
+  stage_name  = "access-log"
+  description = "my name"
 }

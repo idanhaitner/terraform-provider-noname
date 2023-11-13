@@ -8,14 +8,14 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/organizations"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/conns"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/verify"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
+	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/verify"
 )
 
 func ResourceOrganizationalUnit() *schema.Resource {

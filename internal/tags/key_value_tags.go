@@ -8,7 +8,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/cloudposse/terraform-provider-awsutils/internal/create"
+	"github.com/idanhaitner/terraform-provider-noname/internal/create"
 )
 
 const (

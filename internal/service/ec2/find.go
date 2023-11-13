@@ -7,10 +7,10 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/tfresource"
-	"github.com/cloudposse/terraform-provider-awsutils/internal/verify"
 	"github.com/hashicorp/aws-sdk-go-base/v2/awsv1shim/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/resource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/tfresource"
+	"github.com/idanhaitner/terraform-provider-noname/internal/verify"
 )
 
 func FindAvailabilityZones(conn *ec2.EC2, input *ec2.DescribeAvailabilityZonesInput) ([]*ec2.AvailabilityZone, error) {

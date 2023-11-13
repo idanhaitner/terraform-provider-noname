@@ -307,7 +307,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/workspaces"
 	"github.com/aws/aws-sdk-go/service/workspacesweb"
 	"github.com/aws/aws-sdk-go/service/xray"
-	tftags "github.com/cloudposse/terraform-provider-awsutils/internal/tags"
+	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
 )
 
 type AWSClient struct {
