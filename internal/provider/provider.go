@@ -16,6 +16,7 @@ import (
 	"github.com/idanhaitner/terraform-provider-noname/internal/conns"
 	"github.com/idanhaitner/terraform-provider-noname/internal/experimental/nullable"
 	"github.com/idanhaitner/terraform-provider-noname/internal/service/apigateway"
+	apigatewayintegration "github.com/idanhaitner/terraform-provider-noname/internal/service/apigateway-integration"
 	tftags "github.com/idanhaitner/terraform-provider-noname/internal/tags"
 	"github.com/idanhaitner/terraform-provider-noname/internal/verify"
 	"github.com/idanhaitner/terraform-provider-noname/names"
@@ -245,7 +246,8 @@ func New(_ context.Context) (*schema.Provider, error) {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
-			"noname_api_gateway": apigateway.ResourceApiGateway(),
+			"noname_api_gateway":             apigateway.ResourceApiGateway(),
+			"noname_api_gateway_integration": apigatewayintegration.ResourceApiGatewayIntegration(),
 		},
 	}
 
